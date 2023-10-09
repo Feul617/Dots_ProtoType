@@ -19,7 +19,7 @@ public class SommonBear : MonoBehaviour
         {
             for (int i = 0; i < summonNum; i++)
             {
-                var prefab = Instantiate(bear.gameObject, startPos.position, Quaternion.Euler(-90f, 0f, 0f));
+                var prefab = Instantiate(bear.gameObject, startPos.position, Quaternion.Euler(0f, 0f, 0f));
                 prefab.GetComponent<Bear>().target = targetPos;
             }
         }
